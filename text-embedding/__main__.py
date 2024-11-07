@@ -34,7 +34,7 @@ class SentenceTransformerService:
 
 @app.route('/api/v1/embeddings', methods=['POST'])
 def embeddings_route():
-    sentences = request.json.get('sentences')
+    sentences = request.json.get('values')
     embeddings = sentence_transformer_model_api.get_embeddings(sentences)
 
     result_list = list()
