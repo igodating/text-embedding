@@ -1,0 +1,5 @@
+model:
+  name:
+    distiluse-base-multilingual-cased-v1
+  root-path:
+    /model-for-text-embedding
